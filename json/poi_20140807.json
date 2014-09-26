@@ -1,0 +1,38 @@
+{
+  "POI": {
+    "nom": {
+      "nom_id": "01",
+      "nom_abrevie": "BIP",
+      "nom_descriptif": "Robot Marcheur"
+    },
+    "thematique_MB": {
+      "thematique_principale": "Robotique",
+      "thematique_secondaire": "Santé"
+    },
+    "chronologie": {
+      "date_debut": "mars 1995",
+      "date_fin": "juin 2000",
+      "etat": {
+        "-type": "boolean",
+        "#text": "false"
+      }
+    },
+    "equipe": {
+      "nom_equipe": "Blabla",
+      "affiliation": "INRIA Rhones-Alpes",
+      "periode_participation": "1999-2000",
+      "directeur_equipe": "Blublu",
+      "referent_poi": "Roger Pissard",
+      "contact": "12345678"
+    },
+    "description": { "descritpion_complete": "BIP est le premier robot marcheur anthropomorphe: il est doté de jambes, d'un bassin et d'articulations dont la morphologie ressemble à celle d'un être humain. Dans les années 90, le Japon construit des robots qui parlent et dansent mais qui sont plus proches d'objets de divertissement que de supports de recherche. Avec BIP, les chercheurs d'Inria reproduisent le plus fidèlement possible la marche humaine, à la fois par la morphologie des membres et par le processus de contrôle dynamique de la marche. Un tel robot se révèle être un excellent outil d'analyse et de simulation : il permet d'expérimenter ce qui manque encore à la reproduction fine d'une marche humaine. Certains résultats de ces recherches ont été appliqués au domaine de l'assistance aux personnes présentant des déficiences motrices." },
+    "application": {
+      "nom_application": "Sante",
+      "description_application": "Pour la reeducation des patients"
+    },
+    "medium_associe": {
+      "master_id": "5",
+      "medium_id": "6"
+    }
+  }
+}

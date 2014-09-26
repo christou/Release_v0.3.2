@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+		
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+
+		<title>Video-BIP</title>
+         
+		<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all2.css" />
+		<link type="text/css" rel="stylesheet" href="css/demo2.css" />
+		<style type="text/css">
+		    
+		     
+			.mm-menu li.img a
+			{
+				font-size: 16px;
+			}
+			.mm-menu li.img a img
+			{
+				float: left;
+				margin: -5px 10px -5px 0;
+			}
+			.mm-menu li.img a small
+			{
+				font-size: 12px;
+			}
+		</style>
+		
+		<!-- Liens pour Video.JS -->
+		<link href="js/video-js/video-js.css" rel="stylesheet">
+		<script src="js/video-js/video.js"></script>
+		
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.hammer.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
+		
+
+		<script type="text/javascript">
+
+			//	The menu on the right
+			$(function() {
+
+				var $menu = $('nav#menu-right');
+				    $html = $('html, body');
+
+				$menu.mmenu({
+					position	: 'right',
+					classes		: 'mm-light',
+					dragOpen	: true,
+					counters	: true,
+					searchfield	: false,
+					labels		: {
+						fixed		: !$.mmenu.support.touch
+					},
+					
+				});
+
+				$menu.find( 'li > a' ).on( // ne marche pas comprenddre avec exemple one page
+					'click',
+					function()
+					{
+						var href = $(this).attr( 'href' );
+
+						//	if the clicked link is linked to an anchor, scroll the page to that anchor 
+						if ( href.slice( 0, 1 ) == '#' )
+						{
+							$menu.one(
+								'closed.mm',
+								function()
+								{
+									setTimeout(
+										function()
+										{
+											$html.animate({
+												scrollTop: $( href ).offset().top
+											});	
+										}, 10
+									);	
+								}
+							);						
+						}
+					}
+				);
+			});
+		</script>
+	</head>
+	<body>
+		<div id="page">
+			<div id="header">
+				
+				BIP - Robot bipède anthropomorphe
+				<a href="#menu-right" class="friends right"></a>
+			</div>
+			<div id="content">
+				<div class="media">
+                              <video id="videomaster" 
+                              	class="video-js vjs-default-skin"
+                              	controls preload="auto"
+  								poster="media/POI_BIP/BIPposter.jpg"
+  								data-setup='{"example_option":true}'>									
+									<source src="media/POI_BIP/bip16.webm" type="video/webm"></source>
+									<source src="media/POI_BIP/bip16.mp4" type="video/mp4"></source>
+									<source src="media/POI_BIP/bip16.ogv" type="video/ogg"></source>	
+									
+									<track kind="captions" src="media/POI_BIP/ensubs.vtt" srclang="en" label="English" default></track>
+									<track kind="captions" src="media/POI_BIP/frsubs.vtt" srclang="fr" label="Français"></track>				
+				              </video>
+				              <script type="text/javascript">
+							   videojs.autoSetup();
+
+							    videojs('videomaster').ready(function(){
+							      console.log(this.options()); //log all of the default videojs options
+							      
+							       // Store the video object
+							      var myPlayer = this, id = myPlayer.id();
+							      // Make up an aspect ratio
+							      var aspectRatio = 9/16; 
+							
+							      function resizeVideoJS(){
+							        var width = document.getElementById(id).parentElement.offsetWidth;
+							        myPlayer.width(width).height( width * aspectRatio );
+							
+							      }
+							      
+							      // Initialize resizeVideoJS()
+							      resizeVideoJS();
+							      // Then on resize call resizeVideoJS()
+							      window.onresize = resizeVideoJS; 
+							    });
+							    </script>
+				              <script> 
+				              	videojs("videomaster").ready(function(){
+									var myPlayer = this; 
+									var myFunc = function(){ 
+										$('body').find('.vjs-poster').css('display','block'); }; 
+									myPlayer.on("ended", myFunc); }); 
+				              </script> 
+				   </div>             	
+	          </div>
+				
+			
+			<nav id="menu-right">
+				<ul>
+					<li><a href="bip_master.html">En savoir plus</a></li>
+					<li><a href="">Emporter</a></li>
+						
+				</ul>
+			</nav>
+		</div>
+	
+	</body>
+</html>

@@ -1,0 +1,113 @@
+{
+   "lom:lom":{
+      "-xmlns:lom":"http://ltsc.ieee.org/xsd/LOM",
+      "-xmlns:lomfr":"http://www.lom-fr.fr/xsd/LOMFR",
+      "lom:general":{
+         "lom:identifier":{
+            "lom:catalog":"URI",
+            "lom:entry":"http://mbwebapp.cervin.org/bip_master.html"
+         },
+         "lom:title":{
+            "lom:string":{
+               "-language":"fre",
+               "#text":"BIP, Robot Marcheur"
+            }
+         },
+         "lom:language":"fre",
+         "lom:description":{
+            "lom:associatedPicture":{
+               "lom:catalog":"URI"
+            },
+            "lom:associatedVideo":{
+               "lom:catalog":"URI"
+            },
+            "lom:string":{
+               "-language":"fre",
+               "#text":"BIP est le premier robot marcheur anthropomorphe: il est dot&eacute; de jambes, d'un bassin et d'articulations dont la morphologie ressemble &agrave; celle d'un &ecirc;tre humain. Dans les ann&eacute;es 90, le Japon construit des robots qui parlent et dansent mais qui sont plus proches d'objets de divertissement que de supports de recherche. Avec BIP, les chercheurs d'Inria reproduisent le plus fid&egrave;lement possible la marche humaine, &agrave; la fois par la morphologie des membres et par le processus de contr&ocirc;le dynamique de la marche. Un tel robot se r&eacute;v&egrave;le &ecirc;tre un excellent outil d'analyse et de simulation : il permet d'exp&eacute;rimenter ce qui manque encore &agrave; la reproduction fine d'une marche humaine. Certains r&eacute;sultats de ces recherches ont &eacute;t&eacute; appliqu&eacute;s au domaine de l'assistance aux personnes pr&eacute;sentant des d&eacute;ficiences motrices."
+            }
+         }
+      },
+      "lom:relation":[
+         {
+            "lom:kind":{
+               "lom:source":"LOMv1.0",
+               "lom:value":"ispartof"
+            },
+            "lom:resource":{
+               "lom:identifier":{
+                  "lom:catalog":"external link",
+                  "lom:entry":"http://mbwebapp.cervin.org/video_nao.html"
+               },
+               "lom:title":{
+                  "lom:string":{
+                     "-language":"fre",
+                     "#text":"NAO, Robot Social"
+                  }
+               },
+               "lom:description":{
+                  "lom:associatedPicture":{
+                     "lom:catalog":"URI"
+                  },
+                  "lom:string":{
+                     "-language":"fre",
+                     "#text":"Le robot Nao permet d'exp&eacute;rimenter les diff&eacute;rentes comp&eacute;tences audiovisuelles n&eacute;cessaires au d&eacute;veloppement du concept de robot social. "
+                  }
+               }
+            }
+         },
+         {
+            "lom:kind":{
+               "lom:source":"LOMv1.0",
+               "lom:value":"ispartof"
+            },
+            "lom:resource":{
+               "lom:identifier":{
+                  "lom:catalog":"text"
+               },
+               "lom:title":{
+                  "lom:string":{
+                     "-language":"fre",
+                     "#text":"G&eacute;rer le d&eacute;s&eacute;quilibre"
+                  }
+               },
+               "lom:description":{
+                  "lom:associatedPicture":{
+                     "lom:catalog":"URI"
+                  },
+                  "lom:string":{
+                     "-language":"fre",
+                     "#text":"Contrairement &agrave; la marche quadrup&egrave;de, se dresser sur deux jambes est une configuration d&rsquo;&eacute;quilibre instable.  L&rsquo;enfant met environ 2 ans pour apprendre &agrave; contr&ocirc;ler et exploiter le d&eacute;s&eacute;quilibre permanent du processus de la marche. Pour reproduire le m&eacute;canisme de la marche,  BIP dispose de capteurs de forces et d&rsquo;inclinaisons (informations sensorielles) et d&rsquo;actionneurs (muscles) au niveau de ses articulations (taille, bassin, genoux, chevilles). Le tout est mod&eacute;lis&eacute; math&eacute;matiquement et doit &ecirc;tre contr&ocirc;l&eacute; en temps r&eacute;el. Ainsi, a-t-on compris en d&eacute;tail ce qu'est  le m&eacute;canisme de la marche humaine."
+                  }
+               }
+            }
+         },
+         {
+            "lom:kind":{
+               "lom:source":"LOMv1.0",
+               "lom:value":"ispartof"
+            },
+            "lom:resource":{
+               "lom:identifier":{
+                  "lom:catalog":"external linl",
+                  "lom:entry":"http://mbwebapp.cervin.org/video_nao.html"
+               },
+               "lom:title":{
+                  "lom:string":{
+                     "-language":"fre",
+                     "#text":"NAO, Robot Social"
+                  }
+               },
+               "lom:description":{
+                  "lom:associatedPicture":{
+                     "lom:catalog":"URI"
+                  },
+                  "lom:string":{
+                     "-language":"fre",
+                     "#text":"Le robot Nao permet d'exp&eacute;rimenter les diff&eacute;rentes comp&eacute;tences audiovisuelles n&eacute;cessaires au d&eacute;veloppement du concept de robot social. "
+                  }
+               }
+            }
+         }
+      ]
+   }
+}

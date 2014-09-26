@@ -1,0 +1,283 @@
+{
+  "lom:lom": {
+    "-xmlns:lom": "http://ltsc.ieee.org/xsd/LOM",
+    "-xmlns:lomfr": "http://www.lom-fr.fr/xsd/LOMFR",
+    "lom:general": {
+      "lom:identifier": {
+        "lom:catalog": "URI",
+        "lom:entry": "http://mbwebapp.cervin.org/bip_master.html"
+      },
+      "lom:title": {
+        "lom:string": {
+          "-language": "fre",
+          "#text": "BIP, Robot Marcheur"
+        }
+      },
+      "lom:language": "fre",
+      "lom:description": {
+        "lom:string": {
+          "-language": "fre",
+          "#text": "BIP est le premier robot marcheur anthropomorphe: il est doté de jambes, d'un bassin et d'articulations dont la morphologie ressemble à celle d'un être humain. Dans les années 90, le Japon construit des robots qui parlent et dansent mais qui sont plus proches d'objets de divertissement que de supports de recherche. Avec BIP, les chercheurs d'Inria reproduisent le plus fidèlement possible la marche humaine, à la fois par la morphologie des membres et par le processus de contrôle dynamique de la marche. Un tel robot se révèle être un excellent outil d'analyse et de simulation : il permet d'expérimenter ce qui manque encore à la reproduction fine d'une marche humaine. Certains résultats de ces recherches ont été appliqués au domaine de l'assistance aux personnes présentant des déficiences motrices."
+        }
+      },
+      "lom:keyword": [
+        {
+          "lom:string": {
+            "-language": "fre",
+            "#text": "Robotique"
+          }
+        },
+        {
+          "lom:string": {
+            "-language": "fre",
+            "#text": "Marche"
+          }
+        },
+        {
+          "lom:string": {
+            "-language": "fre",
+            "#text": "Bipède"
+          }
+        }
+      ],
+      "lom:aggregationLevel": {
+        "lom:source": "LOMv1.0",
+        "lom:value": "3"
+      },
+      "lomfr:documentType": [
+        {
+          "lomfr:source": "LOMFRv1.0",
+          "lomfr:value": "texte"
+        },
+        {
+          "lomfr:source": "LOMFRv1.0",
+          "lomfr:value": "image en mouvement"
+        },
+        {
+          "lomfr:source": "LOMFRv1.0",
+          "lomfr:value": "ressource interactive"
+        },
+        {
+          "lomfr:source": "LOMFRv1.0",
+          "lomfr:value": "son"
+        }
+      ]
+    },
+    "lom:lifeCycle": {
+      "lom:version": {
+        "lom:string": {
+          "-language": "fre",
+          "#text": "V1 septembre 2014"
+        }
+      },
+      "lom:status": {
+        "lom:source": "LOMv1.0",
+        "lom:value": "revised"
+      },
+      "lom:contribute": [
+        {
+          "lom:role": {
+            "lom:source": "LOMv1.0",
+            "lom:value": "author"
+          },
+          "lom:entity": "Marie Collin",
+          "lom:date": { "lom:dateTime": "2014-06-01" }
+        },
+        {
+          "lom:role": {
+            "lom:source": "LOMv1.0",
+            "lom:value": "author"
+          },
+          "lom:entity": "Thierry Vieville",
+          "lom:date": { "lom:dateTime": "2014-06-01" }
+        }
+      ]
+    },
+    "lom:metaMetadata": {
+      "lom:identifier": {
+        "lom:catalog": "URI",
+        "lom:entry": "http://www.unit.eu/metadata/lomfr/ID005"
+      },
+      "lom:metadataSchema": "LOMFRv1.0",
+      "lom:language": "fre"
+    },
+    "lom:technical": {
+      "lom:location": "http://mbwebapp.cervin.org/bip_master.html",
+      "lom:requirement": [
+        {
+          "lom:orComposite": [
+            {
+              "lom:type": {
+                "lom:source": "LOMv1.0",
+                "lom:value": "browser"
+              },
+              "lom:name": {
+                "lom:source": "LOMFRv1.0",
+                "lom:value": "firefox"
+              }
+            },
+            {
+              "lom:type": {
+                "lom:source": "LOMv1.0",
+                "lom:value": "browser"
+              },
+              "lom:name": {
+                "lom:source": "LOMFRv1.0",
+                "lom:value": "chrome"
+              }
+            },
+            {
+              "lom:type": {
+                "lom:source": "LOMv1.0",
+                "lom:value": "browser"
+              },
+              "lom:name": {
+                "lom:source": "LOMv1.0",
+                "lom:value": "opera"
+              }
+            }
+          ]
+        },
+        {
+          "lom:orComposite": {
+            "lom:type": {
+              "lom:source": "LOMv1.0",
+              "lom:value": "operating system"
+            },
+            "lom:name": {
+              "lom:source": "LOMv1.0",
+              "lom:value": "multi-os"
+            }
+          }
+        }
+      ]
+    },
+    "lom:educational": {
+      "lom:learningResourceType": {
+        "lom:source": "LOMv1.0",
+        "lom:value": "lecture"
+      },
+      "lom:intendedEndUserRole": {
+        "lom:source": "LOMv1.0",
+        "lom:value": "learner"
+      },
+      "lom:context": {
+        "lom:source": "LOMv1.0",
+        "lom:value": "all public"
+      },
+      "lom:typicalAgeRange": {
+        "lom:string": {
+          "-language": "fre",
+          "#text": "6+"
+        }
+      },
+      "lom:typicalLearningTime": { "lom:duration": "PT30M" },
+      "lom:description": {
+        "lom:string": {
+          "-language": "fre",
+          "#text": "accompagnement de la visite du site"
+        }
+      },
+      "lom:language": "fr",
+      "lomfr:activity": {
+        "lomfr:source": "LOMFRv1.0",
+        "lomfr:value": "apprendre"
+      }
+    },
+    "lom:rights": {
+      "lom:copyrightAndOtherRestrictions": {
+        "lom:source": "LOMv1.0",
+        "lom:value": "yes"
+      },
+      "lom:description": {
+        "lom:string": {
+          "-language": "fre",
+          "#text": "les résultats des travaux sont la propriété d'Inria."
+        }
+      }
+    },
+    "lom:relation": [
+      {
+        "lom:kind": {
+          "lom:source": "LOMv1.0",
+          "lom:value": "ispartof"
+        },
+        "lom:resource": {
+          "lom:identifier": {
+            "lom:catalog": "url",
+            "lom:entry": "NAO, Robot Social http://mbwebapp.cervin.org/video_nao.html"
+          },
+          "lom:description": {
+            "lom:string": {
+              "-language": "fre",
+              "#text": "Le robot Nao permet d'expérimenter les différentes compétences audiovisuelles nécessaires au développement du concept de robot social. "
+            }
+          }
+        }
+      },
+      {
+        "lom:kind": {
+          "lom:source": "LOMv1.0",
+          "lom:value": "ispartof"
+        },
+        "lom:resource": {
+          "lom:identifier": {
+            "lom:catalog": "text",
+            "lom:entry": "Poppy"
+          },
+          "lom:description": {
+            "lom:string": {
+              "-language": "fre",
+              "#text": "Petit robot humanoïde, open-source et imprimé en 3D créé par l’équipe de recherche Flowers. www.poppy-project.org"
+            }
+          }
+        }
+      }
+    ],
+    "lom:classification": [
+      {
+        "lom:purpose": {
+          "lom:source": "LOMv1.0",
+          "lom:value": "discipline"
+        },
+        "lom:taxonPath": {
+          "lom:source": {
+            "lom:string": {
+              "-language": "fre",
+              "#text": "Classification UNIT"
+            }
+          },
+          "lom:taxon": {
+            "lom:id": "906",
+            "lom:entry": {
+              "lom:string": {
+                "-language": "fre",
+                "#text": "Robotique, vision et image"
+              }
+            }
+          }
+        }
+      },
+      {
+        "lom:purpose": {
+          "lom:source": "LOMv1.0",
+          "lom:value": "discipline"
+        },
+        "lom:taxonPath": {
+          "lom:source": {
+            "lom:string": {
+              "-language": "fre",
+              "#text": "CDD 22e éd."
+            }
+          },
+          "lom:taxon": {
+            "lom:id": "629.892",
+            "lom:entry": {
+              "lom:string": { "-language": "fre" }
+            }
+          }
+        }
+      }
+    ]
+  }
+}
