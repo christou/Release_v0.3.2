@@ -12,5 +12,6 @@ www :
 	git checkout master
 
 show : 
-	firefox http://datagramme.fr
+	firefox http://christou.github.io/Release_v0.3.2
+
 
