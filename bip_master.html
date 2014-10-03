@@ -192,12 +192,14 @@ function contentController($scope) {
 <script>
 	function contentController($scope,$http) {
 	  $http.get("https://github.com/christou/Release_v0.3.2/blob/master/json/bip_minimal.json")
-	  .success(function(response) {$scope.lom:lom = response;});
+	  .success(function(response) {$scope.lom = response;});
 	}
 </script>
-						<div ng-app="" ng-controller="contentController" ng-repeat="x in lom:lom">
+						<div ng-app="" ng-controller="contentController">
 							<h1>
-								{{ x }}
+								<li ng-repeat="x in lom">
+									{{ x }}
+								</li>
 							</h1>
 						
 
