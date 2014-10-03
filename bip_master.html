@@ -195,9 +195,9 @@ function contentController($scope) {
 	  .success(function(response) {$scope.lom:lom = response;});
 	}
 </script>
-						<div ng-app="" ng-controller="contentController">
+						<div ng-app="" ng-controller="contentController" ng-repeat="x in lom:lom">
 							<h1>
-								{{lom:lom[0].lom:lom.lom:general.lom:title.lom:string}}
+								{{ x }}
 							</h1>
 						
 
