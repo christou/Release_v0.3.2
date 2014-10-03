@@ -191,7 +191,7 @@ function contentController($scope) {
 </script>-->	
 <script>
 	function contentController($scope,$http) {
-	  $http.get("https://github.com/christou/Release_v0.3.2/blob/master/json/bip_minimal.json")
+	  $http.get("https://github.com/christou/Release_v0.3.2/blob/master/json/bip_minimal_json_2.php")
 	  .success(function(response) {$scope.lom = response;});
 	}
 </script>
