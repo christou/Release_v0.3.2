@@ -182,16 +182,22 @@
 					
 							
 <!-- ////////////////////////// Angular Test  ///////////////////////////////////////////// -->							
-<script>
+<!-- <script>
 function contentController($scope) {
     $scope.content = {
         title: "BIP, Robot Marcheur",
         description: "BIP est le premier robot marcheur anthropomorphe : il est dot\u00E9 de jambes, d\'un bassin et d\'articulations dont la morphologie ressemble \u00E0 celle d\'un \u00EAtre humain. \n\nDans les ann\u00E9es 90, le japon domine le secteur de la robotique avec des robots qui parlent et dansent mais qui sont plus proches d\'objets de divertissement que de supports de recherche. Avec BIP, les chercheurs d\'Inria reproduisent le plus fid\u00E8lement possible la marche humaine, \u00E0 la fois par la morphologie des membres et par le processus de contr\u00F4le dynamique de la marche. Un tel robot se r\u00E9v\u00E8le \u00EAtre un excellent outil d\'analyse et de simulation : il permet d\'exp\u00E9rimenter ce qui manque encore \u00E0 la reproduction fine d\'une marche humaine. Certains r\u00E9sultats de ces recherches ont \u00E9t\u00E9 appliqu\u00E9s au domaine de l\'assistance aux personnes pr\u00E9sentant des d\u00E9ficiences motrices. "    };
 }
+</script>-->	
+<script>
+	function contentController($scope,$http) {
+	  $http.get("https://github.com/christou/Release_v0.3.2/blob/master/json/bip_minimal.json")
+	  .success(function(response) {$scope.lom:lom = response;});
+	}
 </script>
-						<div ng-app="" ng-controller="contentController">
+						<div ng-app="" ng-controller="contentController" ng-repeat="x in lom:lom">
 							<h1>
-								{{content.title}}
+								{{x.lom:title}}
 							</h1>
 						
 
