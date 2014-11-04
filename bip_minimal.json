@@ -1,0 +1,7 @@
+[
+	{
+		"Entry" : "http://mbwebapp.cervin.org/bip_master.html",			
+		"Title" : "BIP, Robot Marcheur",
+		"Description" : "BIP est le premier robot marcheur anthropomorphe: il est doté de jambes, d'un bassin et d'articulations dont la morphologie ressemble à celle d'un être humain. Dans les années 90, le Japon construit des robots qui parlent et dansent mais qui sont plus proches d'objets de divertissement que de supports de recherche. Avec BIP, les chercheurs d'Inria reproduisent le plus fidèlement possible la marche humaine, à la fois par la morphologie des membres et par le processus de contrôle dynamique de la marche. Un tel robot se révèle être un excellent outil d'analyse et de simulation : il permet d'expérimenter ce qui manque encore à la reproduction fine d'une marche humaine. Certains résultats de ces recherches ont été appliqués au domaine de l'assistance aux personnes présentant des déficiences motrices."
+	}
+]

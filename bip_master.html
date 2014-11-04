@@ -12,7 +12,7 @@
 		<script src="js/video-js/video.js"></script>
 		
 		<!-- Link to AngularJS -->		
-		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
 		
 		<!-- Link to JSON data -->
 		<link rel="import" href="json/bip_minimal.json">
@@ -191,7 +191,7 @@ function contentController($scope) {
 </script>-->	
 <script>
 	function contentController($scope,$http) {
-	  $http.get("https://github.com/christou/Release_v0.3.2/blob/master/bip_minimal_json_2.php")
+	  $http.get("bip_minimal.json")
 	  .success(function(response) {$scope.lom = response;});
 	}
 </script>
